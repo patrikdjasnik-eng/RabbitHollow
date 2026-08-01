@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "champions": [
+    {
+      "id": "barbarian",
+      "name": "Barbarian",
+      "role": "Melee Bruiser",
+      "resource": "rage",
+      "baseAttack": { "name": "Heavy Strike", "damageType": "physical", "power": 1.0 },
+      "passive": { "name": "Rage", "description": "Dealing and receiving damage generates Rage. Rage increases damage and unlocks empowered abilities." },
+      "subclasses": [
+        { "id": "berserker", "name": "Berserker", "role": "Burst Damage", "passive": "Blood Fury", "skills": ["whirlwind", "blood_rush", "berserk", "rage_explosion"], "ultimate": "avatar_of_rage" },
+        { "id": "warlord", "name": "Warlord", "role": "Battle Commander", "passive": "War Cry", "skills": ["cleaving_strike", "war_cry", "commanding_roar", "battle_standard"], "ultimate": "unstoppable_assault" },
+        { "id": "juggernaut", "name": "Juggernaut", "role": "Tank", "passive": "Unbreakable", "skills": ["ground_slam", "iron_skin", "taunt", "seismic_charge"], "ultimate": "colossus_form" }
+      ]
+    },
+    {
+      "id": "mage",
+      "name": "Mage",
+      "role": "Elemental Caster",
+      "resource": "mana",
+      "baseAttack": { "name": "Arcane Bolt", "damageType": "arcane", "power": 1.0 },
+      "passive": { "name": "Arcane Mastery", "description": "Spell casts build Arcane Power, improving the next empowered spell." },
+      "subclasses": [
+        { "id": "pyromancer", "name": "Pyromancer", "role": "Fire Damage", "passive": "Ignite", "skills": ["fireball", "flame_wave", "burning_ground", "meteor"], "ultimate": "inferno" },
+        { "id": "frostcaller", "name": "Frostcaller", "role": "Control", "passive": "Frostbite", "skills": ["frost_bolt", "ice_lance", "blizzard", "frozen_prison"], "ultimate": "absolute_zero" },
+        { "id": "arcanist", "name": "Arcanist", "role": "Arcane Burst", "passive": "Overcharge", "skills": ["chain_lightning", "arcane_beam", "mana_surge", "arcane_nova"], "ultimate": "astral_cataclysm" }
+      ]
+    },
+    {
+      "id": "rogue",
+      "name": "Rogue",
+      "role": "Agile Assassin",
+      "resource": "energy",
+      "baseAttack": { "name": "Quick Strike", "damageType": "physical", "power": 1.0 },
+      "passive": { "name": "Combo", "description": "Successful attacks build Combo Points. Finisher abilities consume Combo Points for increased effects." },
+      "subclasses": [
+        { "id": "assassin", "name": "Assassin", "role": "Critical Burst", "passive": "Lethal Precision", "skills": ["poison_strike", "dash", "shadow_step", "execute"], "ultimate": "death_mark" },
+        { "id": "shadowdancer", "name": "Shadowdancer", "role": "Mobility", "passive": "Evasion", "skills": ["shadow_blade", "blink", "smoke_bomb", "shadow_clone"], "ultimate": "dance_of_shadows" },
+        { "id": "ranger", "name": "Ranger", "role": "Ranged", "passive": "Hunter's Mark", "skills": ["multishot", "poison_arrow", "trap", "piercing_shot"], "ultimate": "rain_of_arrows" }
+      ]
+    },
+    {
+      "id": "paladin",
+      "name": "Paladin",
+      "role": "Holy Warrior",
+      "resource": "holy_power",
+      "baseAttack": { "name": "Holy Strike", "damageType": "holy", "power": 1.0 },
+      "passive": { "name": "Aegis", "description": "Blocking and healing generates Holy Power, which strengthens defensive and holy abilities." },
+      "subclasses": [
+        { "id": "crusader", "name": "Crusader", "role": "Holy Damage", "passive": "Zeal", "skills": ["shield_bash", "holy_strike", "consecration", "judgement"], "ultimate": "divine_wrath" },
+        { "id": "templar", "name": "Templar", "role": "Healer Support", "passive": "Divine Grace", "skills": ["holy_light", "healing_wave", "barrier", "purification"], "ultimate": "mass_resurrection" },
+        { "id": "guardian", "name": "Guardian", "role": "Heavy Tank", "passive": "Bulwark", "skills": ["shield_wall", "taunt", "guardian_aura", "fortress"], "ultimate": "divine_guardian" }
+      ]
+    }
+  ]
+}
